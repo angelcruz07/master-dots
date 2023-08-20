@@ -1,8 +1,7 @@
 /*
 * JS Para la comprobación de datos del Formulario de entrada
 *
-* @author Paco Gomez <paco@mastermind.ac>
-* @link https://github.com/mastermindac/frontend_html_css_js GitHub
+*
 */
 
 //Inicializacion de var,objetos, DOM
@@ -39,6 +38,8 @@ function comprobarForm(event){
     historicoUsuarios(nombre, serie1,serie2,serie3);
     return true;
 }
+
+
 function moviendoImg(event){
     itemImg=event.target;
     console.log(itemImg.src);
@@ -66,7 +67,6 @@ function domCargado(){
 
     formEntrada.addEventListener('submit',comprobarForm);
 
-    
     //Eventos del D&D
     avatarItems=document.getElementsByClassName("avatarImgItem");
     for(let item of avatarItems){
